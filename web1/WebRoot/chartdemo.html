@@ -1,0 +1,143 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div id="container" style="min-width: 450px; height: 400px; margin: 0 auto;overflow:auto;"></div>
+    </div>
+
+<button id="search">查询</button>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/echarts.common.min.js"></script>
+
+    <script type="text/javascript">
+
+
+        $(function () {           
+
+            // 指定图表的配置项和数据
+            var myChart = echarts.init(document.getElementById('container'));
+
+            $("#search").click(function(){
+
+                //参数设置
+
+                    option = {
+
+                        title: {      //标题组件
+
+                            text: '温湿度折线图'
+
+                        },
+
+                        tooltip: {    //提示框组件
+
+                            trigger: 'axis'
+
+                        },
+
+                        legend: {     //图例组件
+
+                        	data: ['温度', '湿度']
+
+                        },
+
+                        grid: {       //直角坐标系内绘图网格
+
+                            left: '3%',
+
+                            right: '4%',
+
+                            bottom: '3%',
+
+                            containLabel: true
+
+                        },
+
+                        toolbox: {     //工具栏
+
+                            feature: {
+
+                                saveAsImage: {}
+
+                            }
+
+                        },
+
+                        xAxis: {       //直角坐标系 grid 中的 x 轴
+
+                            type: 'category',
+
+                            boundaryGap: false,
+
+                            data: ['2017-3-1', '2017-3-2', '2017-3-3', '2017-3-4', '2017-3-5', '2017-3-6', '2017-3-7']
+
+                        },
+
+                        yAxis: {       //直角坐标系 grid 中的 y 轴
+
+                            type: 'value'
+
+                        },
+
+                        series: [      //系列列表
+
+                            {
+
+                                name: '温度',
+
+                                type: 'line',
+
+                                data: [120, 132, 101, 134, 90, 230, 210]
+
+                            },
+
+                            {
+
+                                name: '湿度',
+
+                                type: 'line',
+
+                                data: [220, 182, 191, 234, 290, 330, 310]
+
+                            },
+
+                        ]
+
+                    };
+
+                    myChart.setOption(option);   //参数设置方法
+
+
+            });
+
+       
+
+        });
+        
+        
+
+        // $.ajax({
+        //              type: "post",
+        //              data: {
+        //                  starttime: $("#startTime").val(),
+        //                  endtime: $("#endTime").val(),
+        //                  clearkey: temp_clearkey
+        //              },
+        //              url: "/Historic/getHistoricdata",
+        //              success: function (data) {
+                         
+        //              },
+        //              error: function (result) {
+        //                  alert("服务器异常，请稍后重试-100");
+        //              }
+        //          });
+
+        </script>

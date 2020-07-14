@@ -1,0 +1,96 @@
+body{
+  text-align:center;
+  margin:0 auto;
+}
+
+a:link,a:visited{
+	/*font-weight:bold;
+	color:#CC6633;*/
+	font-family:Î¢ÈíÑÅºÚ;
+	font-size:1em;
+	color:blue;
+	/*background-color:white;*/
+	text-align:center;
+	padding:2px;
+	text-decoration:none;
+	/*text-transform:uppercase;
+	background:url("img/1.JPG");*/
+}
+a:hover,a:active{
+	text-decoration:underline;
+	/*color:#003333;background-color:pink;background:url("img/2.JPG");*/
+}
+
+.hreftype:hover
+{
+	text-decoration:underline;
+	cursor:pointer;
+	}
+
+.nav{
+	/*font-weight:bold;
+	color:#CC6633;*/
+	font-family:Î¢ÈíÑÅºÚ;
+	/*font-size:1em;*/
+	color:white;
+	/*background-color:white;*/
+	text-align:center;
+	padding:2px;
+	text-decoration:none;
+	/*text-transform:uppercase;
+	background:url("img/1.JPG");*/
+}
+
+.nav:hover
+{
+	text-decoration:underline;
+	cursor:pointer;
+	}
+
+#mframe
+{
+	width:900px;
+	margin:0 auto;
+	padding:0;
+}
+
+#header
+{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+#content
+{
+	width:100%;
+	margin:0 auto;
+}
+
+#footer
+{
+	width:100%;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+.buttontype
+{
+	width:60px;
+	height:26px;
+	}
+	
+.buttontype2
+{
+	width:50px;
+	height:24px;
+	}
+
+.cap1
+{
+	font-family:Î¢ÈíÑÅºÚ;
+	font-size:0.8em;
+	font-color:black;
+	}
+	

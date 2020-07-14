@@ -1,0 +1,4 @@
+2019-01-15 00:53:30 [ERROR]-[cn.edu.fjjxu.iot.simulator.IotClientHandler] client exceptionCaught..
+2019-01-15 00:53:30 [ERROR]-[cn.edu.fjjxu.iot.simulator.IotClientHandler] Unexpected exception from downstream:远程主机强迫关闭了一个现有的连接。
+2019-01-15 12:04:41 [ERROR]-[cn.edu.fjjxu.iot.simulator.IotClientHandler] client exceptionCaught..
+2019-01-15 12:04:41 [ERROR]-[cn.edu.fjjxu.iot.simulator.IotClientHandler] Unexpected exception from downstream:远程主机强迫关闭了一个现有的连接。
